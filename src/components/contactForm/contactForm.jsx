@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from '../redux/operations';
+import { addContact } from '../../redux/operations';
 import { nanoid } from '@reduxjs/toolkit';
 import {
   FormContainer,
@@ -8,9 +8,9 @@ import {
   FormButton,
 } from './contactForm.styled';
 import toast, { Toaster } from 'react-hot-toast';
-import { selectContacts } from '../redux/selectors';
+import { selectContacts } from '../../redux/selectors';
 
-const ContactForm = () => {
+export const ContactForm = () => {
   const contacts = useSelector(selectContacts);
   const dispatch = useDispatch();
 

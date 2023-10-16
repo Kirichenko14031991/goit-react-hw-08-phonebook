@@ -1,0 +1,33 @@
+import { useDispatch } from 'react-redux';
+import { logIn } from '../../redux/auth/operations';
+import { Form, InputLogIn, Label, SubmitButton } from './loginForm.styled.jsx';
+
+export const LoginForm = () => {
+  const dispatch = useDispatch();
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    dispatch(
+      logIn({
+        email: form.elements.email.value,
+        password: form.elements.password.value,
+      })
+    );
+    form.reset();
+  };
+
+  return (
+    <Form onSubmit={handleSubmit} autoComplete="off">
+      <Label>
+        Email
+        <InputLogIn type="email" name="email" placeholder="info@goit.ua" />
+      </Label>
+      <Label>
+        Password
+        <InputLogIn type="password" name="password" placeholder="********" />
+      </Label>
+      <SubmitButton type="submit">Log In</SubmitButton>
+    </Form>
+  );
+};
