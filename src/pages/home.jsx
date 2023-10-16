@@ -2,7 +2,6 @@ import { LogInHomePage } from 'components/app/App.styled';
 
 const styles = {
   container: {
-    // minHeight: 'calc(100vh - 50px)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
