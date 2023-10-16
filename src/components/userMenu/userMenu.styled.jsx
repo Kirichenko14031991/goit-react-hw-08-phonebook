@@ -22,19 +22,9 @@ export const ButtonUserName = styled.button`
   display: flex;
   align-items: center;
 
-  transition: color 250ms linear, background-color 250ms linear,
-    box-shadow 250ms linear;
-
-  svg {
-    width: 25px;
-    height: 25px;
-  }
-
   &:hover,
   &:focus {
-    color: rgb(255, 255, 255);
-    background-color: red;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #ff0000;
   }
 `;

@@ -1,5 +1,3 @@
-import { keyframes } from '@emotion/react';
-import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
 
 export const MainWrap = styled.div`
@@ -23,20 +21,6 @@ export const MainHeader = styled.h1`
   padding: 10px; /* Додали внутрішні відступи */
   border: 1px solid #ddd; /* Додали границю */
   border-radius: 5px; /* Додали закруглені кути */
-`;
-
-// Додаткові стилі можна додавати за потребою
-
-const pulse = keyframes`
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
 `;
 
 export const FormTable = styled.form`
@@ -171,33 +155,6 @@ export const GradientSubTitleContacts = styled.h2`
 `;
 
 // ////////////////////home page/////////////////////
-
-export const LogInHomePage = styled(NavLink)`
-  margin-top: 25px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  text-decoration: none;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-
-  transition: color 250ms linear, background-color 250ms linear,
-    box-shadow 250ms linear;
-  animation: ${pulse} 2s infinite;
-
-  &:hover {
-    background-color: #0056b3;
-    animation: none;
-    transform: scale(1.05);
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
-  }
-
-  &:active {
-    transform: scale(0.95);
-  }
-`;
 
 // layout////////////////////////
 export const Container = styled.div`

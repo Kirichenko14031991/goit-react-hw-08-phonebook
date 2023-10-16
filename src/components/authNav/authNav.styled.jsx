@@ -8,6 +8,7 @@ export const DecorNavLink = styled(NavLink)`
   font-weight: 700;
   color: yellow;
   background-color: #007bff;
+  margin-left: 5px;
 
   border: 1px solid #007bff;
   border-radius: 5px;

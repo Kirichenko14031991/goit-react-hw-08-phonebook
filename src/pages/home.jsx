@@ -1,24 +1,17 @@
-import { LogInHomePage } from 'components/app/App.styled';
-
-const styles = {
-  container: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
-  },
-  title: {
-    fontWeight: 500,
-    fontSize: 48,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-};
+import { LogInHomePage } from './home.styled';
 
 export default function Home() {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>Welcome to Phonebook</h1>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        height: '100vh',
+      }}
+    >
+      <h1>Welcome</h1>
       <div>
         <LogInHomePage to="/login" title="Try it now!">
           Log In
