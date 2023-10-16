@@ -2,17 +2,16 @@ import { keyframes } from '@emotion/react';
 import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
 
-// Ваш код для стилізації компонентів
-
 export const MainWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: black;
   border: 2px solid #ddd;
   border-radius: 10px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* Додали зовнішні відступи */
 `;
 
 export const MainHeader = styled.h1`
@@ -20,7 +19,13 @@ export const MainHeader = styled.h1`
   margin-bottom: 20px;
   color: #007bff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0; /* Додали фоновий колір */
+  padding: 10px; /* Додали внутрішні відступи */
+  border: 1px solid #ddd; /* Додали границю */
+  border-radius: 5px; /* Додали закруглені кути */
 `;
+
+// Додаткові стилі можна додавати за потребою
 
 const pulse = keyframes`
   0% {

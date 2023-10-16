@@ -23,16 +23,16 @@ export const ContactNumber = styled.span`
 `;
 
 export const DeleteButton = styled.button`
-  background-color: #007bff;
+  background-color: black;
   color: white;
   border: none;
   padding: 5px 10px;
-  border-radius: 4px;
+  border-radius: 100px;
   font-size: 12px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
 
   &:hover {
-    background-color: #f803bb;
+    background-color: red;
   }
 `;

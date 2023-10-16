@@ -21,11 +21,11 @@ export const LoginForm = () => {
     <Form onSubmit={handleSubmit} autoComplete="off">
       <Label>
         Email
-        <InputLogIn type="email" name="email" placeholder="info@goit.ua" />
+        <InputLogIn type="email" name="email" />
       </Label>
       <Label>
         Password
-        <InputLogIn type="password" name="password" placeholder="********" />
+        <InputLogIn type="password" name="password" />
       </Label>
       <SubmitButton type="submit">Log In</SubmitButton>
     </Form>

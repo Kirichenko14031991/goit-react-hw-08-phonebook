@@ -1,20 +1,30 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-export const DecorationNavLink = styled(NavLink)`
+export const DecorNavLink = styled(NavLink)`
   display: inline-block;
   text-decoration: none;
   padding: 12px;
   font-weight: 700;
-  color: #2a363b;
+  color: yellow;
+  background-color: #007bff;
 
-  &:hover,
-  &:focus {
-    color: rgb(95, 230, 243);
-    scale: 1.1;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+
+  &:hover {
+    color: #fff;
+    transform: scale(1.1);
   }
+  &:focus {
+    background-color: #ff7f50;
+    color: #fff;
+    transform: scale(1.1);
+  }
+
   &.active {
-    color: rgb(95, 230, 243);
+    background-color: #ff7f50;
+    color: #fff;
     font-weight: bold;
   }
 `;

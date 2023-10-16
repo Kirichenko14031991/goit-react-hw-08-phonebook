@@ -1,60 +1,71 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  padding: 20px;
   max-width: 300px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: rgba(249, 249, 249, 0.8);
+  border: 30px solid black;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 `;
 
 export const Label = styled.label`
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
+  color: black;
 `;
+
 export const InputLogIn = styled.input`
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 3px;
   font-size: 16px;
   margin-top: 5px;
+  color: #000;
 `;
 
-const pulse = keyframes`
-  0% {
-    transform: scale(1);
+export const SubmitButton = styled.button`
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    top: 0;
+    left: -100%;
+    animation: wave-animation 2s infinite linear;
   }
-  50% {
+  &:hover {
+    color: #fff;
     transform: scale(1.1);
   }
-  100% {
-    transform: scale(1);
-  }
-`;
-export const SubmitButton = styled.button`
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.2s, transform 0.2s;
-  animation: ${pulse} 2s infinite;
 
-  &:hover {
-    background-color: #0056b3;
-    animation: none;
-    transform: scale(1.05);
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
-  }
-
-  &:active {
-    transform: scale(0.95);
+  @keyframes wave-animation {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
   }
 `;
