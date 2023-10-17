@@ -1,4 +1,5 @@
-import { LogInHomePage } from './home.styled';
+import { LogInHomePage, } from './home.styled';
+import { WelcomeText } from './home.styled';
 
 export default function Home() {
   return (
@@ -9,9 +10,10 @@ export default function Home() {
         alignItems: 'center',
         justifyContent: 'center',
         height: '100vh',
+        
       }}
     >
-      <h1>Welcome</h1>
+      <WelcomeText><h1>Welcome</h1></WelcomeText>
       <div>
         <LogInHomePage to="/login" title="Try it now!">
           Log In

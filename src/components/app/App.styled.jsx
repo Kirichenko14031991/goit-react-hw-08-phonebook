@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const MainWrap = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ export const MainWrap = styled.div`
   border: 2px solid #ddd;
   border-radius: 10px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px; /* Додали зовнішні відступи */
+  margin: 20px; 
 `;
 
 export const MainHeader = styled.h1`
@@ -17,10 +17,10 @@ export const MainHeader = styled.h1`
   margin-bottom: 20px;
   color: #007bff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #f0f0f0; /* Додали фоновий колір */
-  padding: 10px; /* Додали внутрішні відступи */
-  border: 1px solid #ddd; /* Додали границю */
-  border-radius: 5px; /* Додали закруглені кути */
+  background-color: #f0f0f0; 
+  padding: 10px;
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
 `;
 
 export const FormTable = styled.form`
@@ -121,42 +121,6 @@ export const FindContact = styled.p`
   font-weight: 500;
 `;
 
-export const WraperDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: rgba(249, 249, 249, 0.8);
-`;
-
-export const FormContacts = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-`;
-
-export const GradientTextPhone = styled.h1`
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
-  font-family: 'YourDesiredFont', sans-serif;
-`;
-
-export const GradientSubTitleContacts = styled.h2`
-  font-size: 20px;
-  margin-top: 20px;
-  color: #333;
-  font-family: 'YourDesiredFont', sans-serif;
-`;
-
-// ////////////////////home page/////////////////////
-
-// layout////////////////////////
 export const Container = styled.div`
   max-width: 960px;
   margin: 0 auto;

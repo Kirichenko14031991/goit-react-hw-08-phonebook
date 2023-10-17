@@ -9,9 +9,11 @@ import { useAuth } from '../../hooks/useAuth';
 import Home from '../../pages/home';
 import Register from '../../pages/register';
 import Login from '../../pages/login';
-import Contacts from '../../pages/contacts';
+import Contacts from '../../pages/contacts/contacts';
 import { MainHeader, MainWrap } from './App.styled';
 import { Loader } from '../../components/loader';
+import { PageNotFound } from '../../pages/pageNotFound';
+
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -51,6 +53,7 @@ export const App = () => {
               <PrivateRoute redirectTo="/login" component={<Contacts />} />
             }
           />
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </div>

@@ -6,26 +6,29 @@ export const NavigationNavLink = styled(NavLink)`
   text-decoration: none;
   padding: 12px;
   font-weight: 700;
-  color: yellow;
-  background-color: #007bff;
-  border: 1px solid #007bff;
+  color: black;
+  background-color: white;
+  margin-left: 5px;
+  
+  
   border-radius: 5px;
-  margin-right: 5px;
 
   &:hover {
-    color: #fff;
+    background-color: white;
+    color: grey;
     transform: scale(1.1);
   }
   &:focus {
-    background-color: #ff7f50;
-    color: #fff;
+    background-color: white;
+    color: grey;
     transform: scale(1.1);
   }
 
   &.active {
-    background-color: #ff7f50;
-    color: #fff;
-    font-weight: bold;
+    background-color: white;
+    color: red;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); 
   }
 `;
 export default NavLink;
